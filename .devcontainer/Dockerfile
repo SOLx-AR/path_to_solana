@@ -40,7 +40,7 @@ WORKDIR /home/$USERNAME
 RUN curl --proto '=https' --tlsv1.2 -sSfL https://solana-install.solana.workers.dev | bash
 
 # Instalar starship
-RUN curl -sS https://starship.rs/install.sh | sh
+RUN cargo install starship --locked
 
 # Configurando starship como prompt
 COPY starship.toml /home/${USERNAME}/.config/starship.toml
