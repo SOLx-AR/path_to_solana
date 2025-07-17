@@ -1,18 +1,24 @@
 {
-  "name": "Rust Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile",
-  },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "git.enableCommitSigning": true,
-    "rust-analyzer.check.command": "clippy"
-  },
-  "extensions": [
-    "rust-lang.rust-analyzer",
-    "vadimcn.vscode-lldb",
-    "ms-vscode.cpptools",
-    "eamodio.gitlens"
-  ],
-  "postCreateCommand": ".devcontainer/install-dotfiles.sh && .devcontainer/gpg-setup.sh && .devcontainer/nvim-setup.sh",
+        "name": "Rust Dev Container",
+        "build": {
+                "dockerfile": "Dockerfile"
+        },
+        "customizations": {
+                "vscode": {
+                        "settings": {
+                                "terminal.integrated.defaultProfile.linux": "bash",
+                                "git.enableCommitSigning": true,
+                                "rust-analyzer.check.command": "clippy"
+                        },
+                        "terminal.integrated.pasteOnRightClick": true,
+                        "terminal.integrated.allowPaste": true,
+                        "extensions": [
+                                "rust-lang.rust-analyzer",
+                                "vadimcn.vscode-lldb",
+                                "ms-vscode.cpptools",
+                                "eamodio.gitlens"
+                        ]
+                }
+        },
+        "postCreateCommand": ".devcontainer/install-dotfiles.sh && .devcontainer/gpg-setup.sh && .devcontainer/nvim-setup.sh"
 }
