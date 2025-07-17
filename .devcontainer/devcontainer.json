@@ -20,5 +20,5 @@
                         ]
                 }
         },
-        "postCreateCommand": ".devcontainer/install-dotfiles.sh && .devcontainer/gpg-setup.sh && .devcontainer/nvim-setup.sh"
+        "postCreateCommand": "./devcontainer/install-dotfiles.sh && ./devcontainer/gpg-setup.sh && ./devcontainer/nvim-setup.sh"
 }
