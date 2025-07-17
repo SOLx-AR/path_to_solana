@@ -39,8 +39,8 @@ WORKDIR /home/$USERNAME
 # Instalar las dependencias del curso (rust, solana-cli y anchor)
 RUN curl --proto '=https' --tlsv1.2 -sSfL https://solana-install.solana.workers.dev | bash
 
-# Instalar starship
-RUN cargo install starship --locked
+# Instalar starship, con full path the cargo porque no esta en el env.
+RUN /home/${USERNAME}/.cargo/bin/cargo install starship --locked
 
 # Configurando starship como prompt
 COPY starship.toml /home/${USERNAME}/.config/starship.toml
