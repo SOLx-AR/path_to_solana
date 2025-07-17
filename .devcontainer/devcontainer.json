@@ -20,5 +20,5 @@
                         ]
                 }
         },
-        "postCreateCommand": "cd /workspaces/path_to_solana && ./devcontainer/gpg-setup.sh && ./devcontainer/nvim-setup.sh"
+        "postCreateCommand": "bash /workspaces/path_to_solana/.devcontainer/post-create.sh"
 }
