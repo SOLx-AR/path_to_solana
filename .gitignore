@@ -1,1 +1,4 @@
+# Ignorar archivos de compilación de rust en la raíz del proyecto
 /target
+# Ignorar archivos de compilación de rust en el directorio de clases
+/clases/clase*/target

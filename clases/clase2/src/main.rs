@@ -49,8 +49,8 @@ fn arbitro(age: u8) -> String {
 // ()
 
 // (5)
-// (true,6)
-// (falso, 6, "no")
+// 
+// ((true,6)falso, 6, "no")
 
 //(r,g,b)
 // let color: (u8, u8, u8) = (255, 255, 225);
