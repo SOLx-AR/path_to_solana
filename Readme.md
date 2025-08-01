@@ -25,7 +25,7 @@ Solana:
 * [Solana Explorer](https://explorer.solana.com/)
 
 Rust:
-
+* [The Rust Programming Language (Español)](https://book.rustlang-es.org/)
 * [The Rust Programming Language](https://doc.rust-lang.org/book/)
 * [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 * [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
